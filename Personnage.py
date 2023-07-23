@@ -5,7 +5,7 @@ class Personnage:
         self.endurance = random.randint(12, 24)
         self.agilite = random.randint(2, 12)
 
-    def lancer_de(self):
+    def throw_dice(self):
         de = random.randint(2, 12)
         return de
 
@@ -15,5 +15,5 @@ class Personnage:
             self.endurance = 0
 
     def test_agilite(self):
-        de = self.lancer_de()
+        de = self.throw_dice()
         return de < self.agilite

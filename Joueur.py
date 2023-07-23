@@ -7,6 +7,6 @@ class Joueur(Personnage):
         self.chance = random.randint(2, 12)
 
     def test_chance(self):
-        de = self.lancer_de()
+        de = self.throw_dice()
         return de < self.chance
 
