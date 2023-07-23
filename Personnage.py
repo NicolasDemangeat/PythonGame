@@ -4,8 +4,8 @@ class Personnage:
     def __init__(self):
         self.endurance = random.randint(12, 24)
         self.agilite = random.randint(2, 12)
-
-    def throw_dice(self):
+    @staticmethod
+    def throw_dice():
         de = random.randint(2, 12)
         return de
 

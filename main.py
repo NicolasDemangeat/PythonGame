@@ -10,13 +10,13 @@ while joueur.endurance > 0 and ennemi.endurance > 0:
     print(f"Vous avez {joueur.endurance} point de vie et {joueur.agilite} d'agilité.")
     print(f"L'ennemi a {ennemi.endurance} point de vie et {ennemi.agilite} d'agilité.")
     input('Jetez les dès pour determiner votre puissance d\'attaque !')
-    power_joueur = joueur.throw_dice() + joueur.agilite
-    power_ennemi = ennemi.throw_dice() + ennemi.agilite
+    power_joueur = Personnage.throw_dice() + joueur.agilite
+    power_ennemi = Personnage.throw_dice() + ennemi.agilite
 
     print(f'La puissance du joueur est de {power_joueur}')
     print(f'La puissance de l\'ennemi est de {power_ennemi}')
     
-    sleep(2)
+    sleep(1)
 
     if power_joueur > power_ennemi:
         print('Le joueur a gagné cette manche !')
